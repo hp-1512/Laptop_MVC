@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #414141;
+    font-family: 'Noto Sans';
+    margin-bottom: 0;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh;
+}
+
+#login-btn,
+#reset-password-page-btn,
+#forgot-password-page-btn {
+    background-color: transparent;
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+    font-size: 17px;
+    width: 100%;
+}
+
+#login-btn:hover,
+#reset-password-page-btn:hover,
+#forgot-password-page-btn:hover {
+    color: #ffff;
+    background-color: #F88634;
+}
+
+#lost-password-div {
+    font-size: 14px;
+    text-align: center;
+}
+
+#lost-password {
+    text-decoration: none;
+    color: #414141;
+}
+
+#lost-password-div p a {
+    text-decoration: none;
+}
+.form-control:focus {
+    border: 1px solid #2B64B1;
+    box-shadow: 0 0 10px #2B64B11F  ;
+}
+.carousel-item{
+    transition: 0s;
+}
+@media screen AND (max-width:1254px) {
+    .row {
+        flex-direction: column;
+    }
+
+    #carousel {
+        width: 100vw;
+        height: auto;
+    }
+
+    #form {
+        width: 100vw;
+    }
+}
+@media screen AND (max-width:991px) {
+    .row {
+        margin-top: 10px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen AND (max-width:767px) {
+    .carousel-inner img {
+        margin: 5px;
+        width: 100%;
+    }
+}
+
