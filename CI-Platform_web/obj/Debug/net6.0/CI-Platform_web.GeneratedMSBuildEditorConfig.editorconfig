@@ -23,8 +23,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Login/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Pages/Forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcRm9yZ290LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/Error.cshtml]
@@ -47,6 +51,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kusxo8oku2
 
-[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_LayoutLogin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = b-6zhibwx6gq
+[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_LayoutPages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-j9oq0b1u6l

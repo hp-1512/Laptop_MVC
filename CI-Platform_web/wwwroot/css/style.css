@@ -13,6 +13,14 @@ body {
     font-size: 16px;
 }
 
+
+.w-100 {
+    filter: brightness(0.7);
+}
+
+#carousel{
+    padding:0;
+}
 .carousel-inner img {
     width: 100%;
     height: 100vh;
@@ -28,14 +36,34 @@ body {
     font-size: 17px;
     width: 100%;
 }
-
+.form-control{
+    padding: 0.7rem;
+}
 #login-btn:hover,
 #reset-password-page-btn:hover,
 #forgot-password-page-btn:hover {
     color: #ffff;
     background-color: #F88634;
 }
-
+h1 {
+    width:80%;
+}
+.carousel-caption {
+    text-align:left;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,0.75));
+    padding:26% 24% 18% 12%;
+    bottom:0.001rem;
+}
+.carousel-caption > p{
+    margin-top:5%;
+    font-size:0.8rem;
+    color:#ffff;
+    opacity:1;
+}
 #lost-password-div {
     font-size: 14px;
     text-align: center;
@@ -57,10 +85,16 @@ body {
     transition: 0s;
 }
 @media screen AND (max-width:1254px) {
-    .row {
-        flex-direction: column;
+    #form {
+        margin-top:3%;
     }
-
+    h1{
+        width:100%;
+    }
+    .carousel-caption {
+        text-align: center;
+        padding: 26%  12% 12% 12%;
+    }
     #carousel {
         width: 100vw;
         height: auto;
@@ -71,10 +105,13 @@ body {
     }
 }
 @media screen AND (max-width:991px) {
-    .row {
-        margin-top: 10px;
+    #form {
+        margin-top: 3%;
     }
 
+    .carousel-caption{
+        padding:17% 14% 0 14%;
+    }
     .carousel-inner img {
         width: 100%;
         height: auto;
@@ -83,8 +120,14 @@ body {
 
 @media screen AND (max-width:767px) {
     .carousel-inner img {
-        margin: 5px;
+        background: linear-gradient(180deg,transparent,rgba(0,0,0,0.75));
         width: 100%;
     }
 }
 
+@media (min-width: 768px){
+    .ms-md-4 {
+        margin-left: 1.2rem !important;
+        margin-right:1rem;
+    }
+} 

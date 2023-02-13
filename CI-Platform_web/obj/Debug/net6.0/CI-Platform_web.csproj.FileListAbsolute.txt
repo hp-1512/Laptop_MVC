@@ -536,4 +536,4 @@ D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\bin\Debug\
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css
+D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutPages.cshtml.rz.scp.css

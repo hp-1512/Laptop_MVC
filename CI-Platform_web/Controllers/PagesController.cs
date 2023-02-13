@@ -2,9 +2,13 @@
 
 namespace CI_Platform_web.Controllers
 {
-    public class LoginController : Controller
+    public class PagesController : Controller
     {
         public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Forgot()
         {
             return View();
         }
