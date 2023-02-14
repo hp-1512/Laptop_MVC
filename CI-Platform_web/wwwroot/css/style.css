@@ -9,15 +9,57 @@ body {
     margin-bottom: 0;
 }
 
-.form-label {
-    font-size: 16px;
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #414141;
+    opacity: 1;
 }
 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #414141;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #414141;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #414141;
+    opacity: 1;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #414141;
+    opacity: 1;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color: #414141;
+    font-weight: 500;
+    opacity: 1;
+}
+
+
+.form-label {
+    font-size: 16px;
+    font-weight:300;     
+}
+.form-control{
+    font-size: 1rem;
+}
+#forgot-password-header > p{
+    font-size:14px;
+}
 
 .w-100 {
     filter: brightness(0.7);
 }
-
+#indi{
+    border-radius: 90%;
+    width: 7px;
+    height: 7px;
+}
 #carousel{
     padding:0;
 }
@@ -53,13 +95,13 @@ h1 {
     left: 0;
     right: 0;
     width: 100%;
-    height: 70%;
-    background: linear-gradient(180deg,transparent,rgba(0,0,0,0.75));
-    padding:26% 24% 18% 12%;
+    height: 65%;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,0.79));
+    padding:24% 24% 18% 12%;
     bottom:0.001rem;
 }
 .carousel-caption > p{
-    margin-top:5%;
+    margin-top:3%;
     font-size:0.8rem;
     color:#ffff;
     opacity:1;
@@ -67,6 +109,7 @@ h1 {
 #lost-password-div {
     font-size: 14px;
     text-align: center;
+    color: #414141;
 }
 
 #lost-password {
@@ -84,9 +127,61 @@ h1 {
 .carousel-item{
     transition: 0s;
 }
+
+
+.pp {
+    display: flex;
+    justify-content: center;
+    margin:40% 0;
+}
+
+#form {
+    display: grid;
+    grid-template-rows: 90vh 10vh;
+    align-items: center;
+}
+
+form{
+    padding-top:14%;
+}
+#register-btn {
+    background-color: transparent;
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+    font-size: 17px;
+    width: 100%;
+}
+
+#register-btn:hover {
+   color: #ffff;
+   background-color: #F88634;
+}
+#lost-password-div {
+    font-size: 14px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#lost-password {
+    text-decoration: none;
+    color: #414141;
+    font-weight:lighter;
+}
+
+#lost-password-div p a {
+    text-decoration: none;
+}
+
+@media screen AND (max-width:1310px){
+    h1{
+        width:90%
+    }
+}
+
 @media screen AND (max-width:1254px) {
-    #form {
-        margin-top:3%;
+    form{
+        padding-top:0;
     }
     h1{
         width:100%;
@@ -101,33 +196,37 @@ h1 {
     }
 
     #form {
+        margin-top:5%;
         width: 100vw;
+        grid-template-rows: auto;
     }
+    .pp {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin: 5% 0;
+    }
+    
 }
 @media screen AND (max-width:991px) {
-    #form {
-        margin-top: 3%;
-    }
+    
 
     .carousel-caption{
-        padding:17% 14% 0 14%;
+        padding:13% 14% 0 14%;
     }
     .carousel-inner img {
         width: 100%;
         height: auto;
     }
+   
 }
 
 @media screen AND (max-width:767px) {
     .carousel-inner img {
         background: linear-gradient(180deg,transparent,rgba(0,0,0,0.75));
-        width: 100%;
+    }
+    form {
+        width: 90%;
     }
 }
 
-@media (min-width: 768px){
-    .ms-md-4 {
-        margin-left: 1.2rem !important;
-        margin-right:1rem;
-    }
-} 

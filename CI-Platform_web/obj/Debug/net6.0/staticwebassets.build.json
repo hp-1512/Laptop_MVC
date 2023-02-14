@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IHcnMWRjY31sANbdtN1+rZssX2kc0R2h16hWXwHdCNE=",
+  "Hash": "vWa54eSXmW7rVxoiaFW10nK7pBZ3uxt990pD4qBYwMo=",
   "Source": "CI-Platform_web",
   "BasePath": "_content/CI-Platform_web",
   "Mode": "Default",
@@ -797,6 +797,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CI Platform Assets\\Grow-Trees-On-the-path-to-environment-sustainability-login.png"
+    },
+    {
+      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\CI Platform Assets\\Grow-Trees-On-the-path-to-environment-sustainability-login_copy.png",
+      "SourceId": "CI-Platform_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\",
+      "BasePath": "_content/CI-Platform_web",
+      "RelativePath": "CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-login_copy.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CI Platform Assets\\Grow-Trees-On-the-path-to-environment-sustainability-login_copy.png"
     },
     {
       "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\CI Platform Assets\\heart.png",
