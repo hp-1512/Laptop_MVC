@@ -1,0 +1,123 @@
+#navbar-toggler-btn {
+    box-shadow: none;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.container{
+    max-width: 92vw;
+}
+.searchByFilter {
+    border-left: 1px solid #D9D9D9;
+}
+
+.searchByFilter:nth-last-child(1) {
+    padding-right: 30px;
+    border-right: 1px solid #D9D9D9;
+}
+
+.dropdown-toggle-split::after {
+    margin-left: 60px;
+}
+
+#gridView,
+#listView {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(238, 238, 238);
+}
+
+#mission-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-btn {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+#location {
+    position: absolute;
+    top: 1rem;
+    right: 10px;
+    border-radius: 20px;
+}
+
+#likeThisMission {
+    position: absolute;
+    bottom: 65px;
+    right: 10px;
+}
+
+#shareToFriend {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#missionTheme {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.rating-star {
+    width: 20px;
+    height: 20px;
+}
+
+#missionPeriod {
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    border-radius: 20px;
+}
+
+#applyNowBtn {
+    width: 8rem;
+    border-radius: 20px;
+}
+
+#applyNowBtn img {
+    height: 15px;
+    width: 20px;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.list-view .row>[class*=col-] {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+
+.list-view .card {
+    flex-direction: row;
+}
+
+@media (max-width: 575.98px) {
+    .list-view .card {
+        flex-direction: column;
+    }
+}
+
+.list-view .card>.card-img-top {
+    width: auto;
+}
+
+.list-view .card .card-body {
+    display: inline-block;
+}
+

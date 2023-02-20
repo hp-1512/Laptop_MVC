@@ -17,7 +17,10 @@ namespace CI_Platform_web.Controllers
         {
             return View();
         }
-
+        public IActionResult noMission()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

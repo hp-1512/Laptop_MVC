@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7gb3vZMCvSq7YLzjjcNTqnv4NdDUi1qpuXSTExYk6vE=",
+  "Hash": "bLR8J7r0ERB0pwSqjR0sTKMR0V7Undkclu6w/QEoOmY=",
   "Source": "CI-Platform_web",
   "BasePath": "_content/CI-Platform_web",
   "Mode": "Default",
@@ -1921,6 +1921,23 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
     },
     {
+      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\css\\jplanding.css",
+      "SourceId": "CI-Platform_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\",
+      "BasePath": "_content/CI-Platform_web",
+      "RelativePath": "css/jplanding.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jplanding.css"
+    },
+    {
       "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\css\\landingPage.css",
       "SourceId": "CI-Platform_web",
       "SourceType": "Discovered",
@@ -2038,6 +2055,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\js\\extra.js",
+      "SourceId": "CI-Platform_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\",
+      "BasePath": "_content/CI-Platform_web",
+      "RelativePath": "js/extra.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\extra.js"
     },
     {
       "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\js\\pages-style.js",
