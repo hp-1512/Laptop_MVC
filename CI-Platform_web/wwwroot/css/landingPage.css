@@ -1,8 +1,11 @@
 ﻿
-* {
+/** {
     transition: 0.2s all ease;
 }
-
+*/
+.card {
+    transition: 0.2s all ease;
+}
 #top-header-row {
     margin: 0 3rem;
 }

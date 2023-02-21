@@ -1,11 +1,11 @@
-#navbar-toggler-btn {
+/*#navbar-toggler-btn {
     box-shadow: none;
 }
 
 .navbar-nav .dropdown-menu {
     position: absolute;
 }
-
+*/
 .container{
     max-width: 92vw;
 }
@@ -13,11 +13,11 @@
     border-left: 1px solid #D9D9D9;
 }
 
-.searchByFilter:nth-last-child(1) {
+/*.searchByFilter:nth-last-child(1) {
     padding-right: 30px;
     border-right: 1px solid #D9D9D9;
 }
-
+*/
 .dropdown-toggle-split::after {
     margin-left: 60px;
 }

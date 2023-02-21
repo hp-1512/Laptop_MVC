@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    -webkit-transition: all 0.3s ease-in;
+    /*-webkit-transition: all 0.3s ease-in;*/
 }
 /*for smooth scrolling*/
 .reveal {
@@ -42,10 +42,10 @@ body {
     opacity: 1;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-    color: #414141;
+/*::-ms-input-placeholder {*/ /* Microsoft Edge */
+    /*color: #414141;
     opacity: 1;
-}
+}*/
 
 ::placeholder { /* Most modern browsers support this now. */
     color: #414141;
@@ -80,14 +80,14 @@ body {
     width: 100%;
     height: 100vh;
 }
-.no-mission-found>h1{
+/*.no-mission-found>h1{
     width:auto;
 }
 .no-mission-found {
     width: 100vw;
 
     justify-content: center;
-}
+}*/
 #submit-new-mission-btn {
     background-color: transparent;
     border: 2px solid #F88634;

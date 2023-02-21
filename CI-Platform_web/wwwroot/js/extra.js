@@ -1,3 +1,4 @@
+//for list-grid-view
 function showList(e) {
     var $gridCont = $(".grid-container");
     // e.preventDefault();
@@ -12,6 +13,7 @@ function gridList(e) {
 $(document).on("click", ".btn-grid", gridList);
 $(document).on("click", ".btn-list", showList);
 
+//for changing image for list-view
 
 //for filter-choices
 var checkboxes = document.querySelectorAll(".checkbox");
