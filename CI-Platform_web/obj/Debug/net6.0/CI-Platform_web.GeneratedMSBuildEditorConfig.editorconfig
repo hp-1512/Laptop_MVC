@@ -63,10 +63,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-kusxo8oku2
+[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_LayoutHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ow3jpba69d
 
 [D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_LayoutPages.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQYWdlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-j9oq0b1u6l
+
+[D:/HP/ci-project-main/ci-project-main/MVC/CI-Platform/CI-Platform_web/Views/Shared/_LayoutSingleHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTaW5nbGVIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y2m7muzc4a

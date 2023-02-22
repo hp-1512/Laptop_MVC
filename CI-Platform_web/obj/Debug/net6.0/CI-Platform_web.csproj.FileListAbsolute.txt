@@ -528,7 +528,6 @@ D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\CI-Platform_web.RazorAssemblyInfo.cs
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\staticwebassets.build.json
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\staticwebassets.development.json
-D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutPages.cshtml.rz.scp.css
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\bundle\CI-Platform_web.styles.css
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\projectbundle\CI-Platform_web.bundle.scp.css
@@ -537,3 +536,5 @@ D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\ref\CI-Platform_web.dll
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\CI-Platform_web.pdb
 D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\CI-Platform_web.genruntimeconfig.cache
+D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutSingleHeader.cshtml.rz.scp.css
+D:\HP\ci-project-main\ci-project-main\MVC\CI-Platform\CI-Platform_web\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutHeader.cshtml.rz.scp.css

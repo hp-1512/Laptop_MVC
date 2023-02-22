@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bLR8J7r0ERB0pwSqjR0sTKMR0V7Undkclu6w/QEoOmY=",
+  "Hash": "BIGVYD5BY1Ot+7iUhygMAcIR/f9hl7mFSpjWQwkDnjw=",
   "Source": "CI-Platform_web",
   "BasePath": "_content/CI-Platform_web",
   "Mode": "Default",
@@ -1955,6 +1955,23 @@
       "OriginalItemSpec": "wwwroot\\css\\landingPage.css"
     },
     {
+      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\css\\mission-page.css",
+      "SourceId": "CI-Platform_web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\",
+      "BasePath": "_content/CI-Platform_web",
+      "RelativePath": "css/mission-page.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mission-page.css"
+    },
+    {
       "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\css\\registration.css",
       "SourceId": "CI-Platform_web",
       "SourceType": "Discovered",
@@ -2074,12 +2091,12 @@
       "OriginalItemSpec": "wwwroot\\js\\extra.js"
     },
     {
-      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\js\\pages-style.js",
+      "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\js\\missionpagestyle.js",
       "SourceId": "CI-Platform_web",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\",
       "BasePath": "_content/CI-Platform_web",
-      "RelativePath": "js/pages-style.js",
+      "RelativePath": "js/missionpagestyle.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2088,7 +2105,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\pages-style.js"
+      "OriginalItemSpec": "wwwroot\\js\\missionpagestyle.js"
     },
     {
       "Identity": "D:\\HP\\ci-project-main\\ci-project-main\\MVC\\CI-Platform\\CI-Platform_web\\wwwroot\\js\\site.js",

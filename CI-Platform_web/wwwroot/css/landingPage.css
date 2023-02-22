@@ -77,7 +77,18 @@
 .filters-section {
     margin-top: 2%;
 }
-
+#submit-new-mission-btn {
+    background-color: transparent;
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+    font-size: 17px;
+}
+#submit-new-mission-btn :hover,
+{
+    color: #ffff;
+    background-color: #F88634;
+}
 @media (max-width: 767px) {
     .searchByFilter {
         border: none;
