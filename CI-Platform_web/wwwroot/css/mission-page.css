@@ -71,7 +71,8 @@
     border-radius: 20px;
 }
 
-    #add-to-fav a,
-    #recommen-to-co a {
-        border: 0;
-    }
+#add-to-fav a,
+#recommen-to-co a {
+    border: 0;
+}
+

@@ -15,16 +15,140 @@
         color: #ffff;
         background-color: #F88634;
     }
-</style>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+    .card-tab{
+        width:24%;
+        height:auto;
+    }
+    #missionPeriod{
+        transform: translateY(-54%);
+        background: white;
+        border-radius:20px;
+    }
+     #mission-details-left{
+        padding:0 5%;
+    }
+    .img-gallary{
+        padding-left:5%;
+    }
+    h3{
+        color:#414141;
+        font-weight:400;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: #000000;
+        background-color: transparent;
+        border-color: transparent transparent #f3f3f3;
+        border-bottom: 2px solid !important;
+        font-size: 17px;
+        font-weight:600;
+        
+    }
+
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        color: #414141;
+        font-size: 18px;
+    }
+    #post-comment-btn {
+    background-color: transparent;
+    border: 2px solid #F88634;
+    color: #F88634;
+    border-radius: 24px;
+    font-size: 17px;
+}
+
+#post-comment-btn:hover{
+    color: #ffff;
+    background-color: #F88634;
+}
+.volunteer-img{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+}
+
+/*pagination Part*/
+.info span span {
+    align-items: end;
+    font-size: 10px;
+}
+
+.info button:first-child {
+    border: 0px;
+    border-right: 1px solid #E8E8E8;
+    background-color: transparent;
+    height: 100%;
+    width: 10%;
+}
+
+.info button:last-child {
+    border: 0;
+    border-left: 1px solid #E8E8E8;
+    background-color: transparent;
+    height: 100%;
+    width: 10%;
+}
+
+.info .pagging {
+    height: 50px;
+    border: #E8E8E8 1px solid;
+}
+/*#mi-info-part > row{
+    height:15%;
+}*/
+    @@media only screen and (max-width:579px){
+        #mission-info{
+            flex-direction:column;
+        }
+        #mission-info>div{
+            text-align:center;
+            width:100%;
+        }
+    }
+   
+    @@media only screen and (min-width:991px){
+        .img-gallary{
+            height:38rem;
             
-                <div class="container h-100">
-                    <div class="row h-100">
-                        <div class="col-12 col-lg-10 mx-auto justify-content-center">
+        }
+        @@media only screen and (max-width:1140px){
+        #add-to-fav, #recommen-to-co{
+            height:60px;
+        }
+        
+         
+        #mission-info{
+            flex-wrap:wrap;
+        }
+        .card-tab{
+            width:48%;
+            margin:1%;
+        }
+        
+    }}
+    @@media only screen and (max-width:992px){
+        .card-body{
+            text-align:center;
+        }
+        .img-gallary{
+            padding-left:0;
+        }
+    }
+   
+    
+</style>
+<div class="container-fluid" style="padding: 0 7%">
+    <div class="row">
+        <div class="container col-lg-6 col-md-12 col-sm-12 px-0 h-100">
+            
+                @*<div class="container h-100">
+                    <div class="row h-100">*@
+                        <div class=" d-flex mx-auto justify-content-center  w-100 ">
                             <!-- Container for the image gallery -->
-                            <div class="container" style="height: 100%">
+                            <div class=" img-gallary">
 
                                 <!-- Full-width images with number text -->
                                 <div style="height: 80%">
@@ -94,21 +218,24 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    @*</div>
+                </div>*@
                 
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            <div class="col-12 col-lg-10 mt-lg-0 mt-3">
-                 <div class="card-body p-0">
+        <div class="col-lg-6 col-md-12 col-sm-12 align-items-center d-flex">
+            <div class="col-12 col-lg-12 mt-lg-0 mt-3" id='mission-details-left'>
+                 <div class="card-body p-0 w-100">
                                 <h3 class="card-title px-3">CSR initiative stands for Coffee and Farmer Equity</h3>
                                 <p class="card-text px-3">Some quick example text to build on the card title and make up the bulk of
                                     the card's content.</p>
-                                <div class="border-top border-bottom mt-4 position-relative" id="missionInfo">
-                                    <div class="border text-center px-3" id="missionPeriod">
+                                <div class="border-top d-flex justify-content-center">
+                                    <div class="border text-center px-3 position-absolute" id="missionPeriod">
                                         <small>Plant 10,000 Trees</small>
                                     </div>
-                                    <div class="d-flex justify-content-sm-around justify-content-between align-items-center px-4 py-3">
+                                </div>
+                                <div class="border-bottom mt-4 position-relative" id="missionInfo">
+                               top            border-color                
+                                    <div class="d-flex justify-content-sm-around justify-content-between align-items-center px-4 py-3 mission-time-goal-indicators">
                                         <div class="d-flex align-items-center">
                                             <img class="me-2" height="20" src="~/CI Platform Assets/Seats-left.png" alt="">
                                             <div>
@@ -128,49 +255,53 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="container mx-auto row mt-4 mb-3">
-                                    <div class="col-12 col-sm-6 mb-3">
+                                <div class="mx-auto row mt-4 mb-3">
+                                    <div class="col-12 col-sm-12 col-md-6 mb-3">
                                         <div class="d-flex" id="add-to-fav">
-                                            <a href="#" class="btn d-flex align-items-center justify-content-center mx-auto">
+                                            <a href="#" class="btn d-flex align-items-center justify-content-center mx-auto ">
                                                 <img class="me-2" src="~/CI Platform Assets/heart1.png" alt="">
                                                 <small class="mb-0 pe-4 h6">Add to Favourite</small>
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-6 mb-3">
-                                        <div class="d-flex" id="recommen-to-co">
-                                            <a href="#" class="btn d-flex align-items-center justify-content-center mx-auto">
-                                                <img class="me-2" src="~/CI Platform Assets/heart1.png" alt="">
-                                                <small class="mb-0 pe-4 h6">Recommend to a Co-Worker</small>
+                                    <div class="col-12 col-sm-12 col-md-6 mb-3">
+                                        <div class="d-flex my-auto" id="recommen-to-co">
+                                            <a href="#" class="btn d-flex align-items-center justify-content-center mx-auto my-2">
+                                                <img class="me-2" src="~/CI Platform Assets/add1.png" alt="">
+                                                <small class="mb-0  pe-4 h6">Recommend to a Co-Worker</small>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="container row border-top pt-4 position-relative mx-auto" id="mission-info">
-                                    <div class="position-absolute" id="ratings">
+                                <div class="d-flex position-relative justify-content-center">
+                                    <hr class=" w-100 " />
+                                    <div class="position-absolute bg-white" id="ratings">
                                         <img class="rating-star" src="~/CI Platform Assets/star-empty.png" alt="">
                                         <img class="rating-star" src="~/CI Platform Assets/star-empty.png" alt="">
                                         <img class="rating-star" src="~/CI Platform Assets/star-empty.png" alt="">
                                         <img class="rating-star" src="~/CI Platform Assets/star-empty.png" alt="">
                                         <img class="rating-star" src="~/CI Platform Assets/star-empty.png" alt="">
                                     </div>
-                                    <div class="col-sm-3 col-6 border py-2 ps-2 pe-3">
-                                        <img class="mb-3" src="~/CI Platform Assets/pin1.png" alt="">
+                                </div>
+                                    
+                                <div class="row pt-4 d-flex justify-content-between" id="mission-info">
+                                    <div class=" border py-2  card-tab">
+                                        <img class="mb-3" src="~/CI Platform Assets/pin1.png " alt="">
                                         <small class="d-block">City</small>
                                         <p class="mb-0">London</p>
                                     </div>
-                                    <div class="col-sm-3 col-6 border py-2 ps-2 pe-3">
+                                    <div class=" border py-2 card-tab">
                                         <img class="mb-3" src="~/CI Platform Assets/web.png" alt="">
                                         <small class="d-block">Theme</small>
                                         <p class="mb-0">Environment</p>
                                     </div>
-                                    <div class="col-sm-3 col-6 border py-2 ps-2 pe-3">
+                                    <div class="border py-2 card-tab">
                                         <img class="mb-3" src="~/CI Platform Assets/calender.png" alt="">
                                         <small class="d-block">Date</small>
                                         <p class="mb-0">Ongoing Opportunity</p>
                                     </div>
-                                    <div class="col-sm-3 col-6 border py-2 ps-2 pe-3">
+                                    <div class="border py-2 card-tab">
                                         <img class="mb-3" src="~/CI Platform Assets/organization.png" alt="">
                                         <small class="d-block">Organization</small>
                                         <p class="mb-0">CSE Network</p>
@@ -189,249 +320,488 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            mission info
+        <div class="col-lg-8 col-md-6 col-sm-12" style="padding:0 3%;">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-mission-tab" data-bs-toggle="tab" data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission" aria-selected="true">Mission</button>
+                <button class="nav-link" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">Organization</button>
+                <button class="nav-link" id="nav-comments-tab" data-bs-toggle="tab" data-bs-target="#nav-comments" type="button" role="tab" aria-controls="nav-comments" aria-selected="false">Comments</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                 <div class="tab-pane fade show active mt-4" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
+                        <h3>Introduction</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <h3>Challenge</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      
+              
+                    @*Documents*@
+                    <h3>Documents</h3>
+                    <div class="d-flex">
+                      <div class="docs btn border rounded-pill me-3">
+                        <img src="~/CI Platform Assets/pdf.png"/><small>lorem-ipsum.pdf</small>
+                      </div>
+                      <div class="docs btn border rounded-pill me-3">
+                        <img src="~/CI Platform Assets/doc.png"/><small>at_vero_eos_accusamus.doc</small>
+                      </div>
+                      <div class="docs btn border rounded-pill">
+                        <img src="~/CI Platform Assets/xlsx.png"/><small>important_doc.xls</small>
+                      </div>
+                    </div>
+                </div>
+
+                @*Organization*@
+                <div class="tab-pane fade" id="nav-organization" role="tabpanel" aria-labelledby="nav-organization-tab">
+                    <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      
+                </div>
+                @*Comments*@
+                <div class="tab-pane fade" id="nav-comments" role="tabpanel" aria-labelledby="nav-comments-tab">
+                    <div>
+                        <div class="form-group mt-4">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter Your Comments"></textarea>
+                        </div>
+                        <button class="btn btn-primary mt-3" id="post-comment-btn">Post Comment</button>
+                    </div>
+                    <div class="mt-4" style="max-height:300px; height:auto;  overflow-x:hidden; background-color:#E8E8E8">
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer4.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer3.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer2.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer1.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer5.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer8.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer9.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex m-2 bg-light rounded">
+                            <img src="~/CI Platform Assets/volunteer6.png" class="col-3 volunteer-img p-2"/>
+                            <div class="col-9">
+                                <p class="mb-1">Margaret Walsh</p>
+                                <small class="d-block">Monday, October 21,2019, 4:57 PM</small>
+                                <p>Nice mission great opportunity for peoples</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+              </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-            info
+        <!-- Information and Volunteer part -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row">
+                    <div class="border">
+                        <div class="p-3 pb-0 me-2 row" id="mi-info-part">
+                            <h5 style="color:#414141; font-weight:400;margin-top:1%; border-color:#E8E8E8" class="border-bottom m-2"><span style="width:5%;" class="border-bottom border-1">Information</span></h5> 
+                            <div class="row mx-2 py-2 border-bottom">
+                                <small class="col-4">Skills</small>
+                                <small class="col-8">Cool, Easy going, Math, Computer</small>
+                            </div>
+                            <div class="row mx-2 py-3 border-bottom">
+                                <small class="col-4">Days</small>
+                                <small class="col-8">Weekends Only</small>
+                            </div>
+                            <div class="row mx-2 py-3 ">
+                                <small class="col-4">Rating</small>
+                                <span  class="col-8 d-flex">
+                                    <span id="ratings">
+                                    <img src="~/CI Platform Assets/selected-star.png" />
+                                    <img src="~/CI Platform Assets/selected-star.png" />
+                                    <img src="~/CI Platform Assets/selected-star.png" />
+                                    <img src="~/CI Platform Assets/selected-star.png" />
+                                    <img src="~/CI Platform Assets/selected-star.png" />
+                                    </span>
+                                    <small>(by 125 Volunteers)</small>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row info">
+                    <div class="col-12 border pt-3 px-4 mt-3">
+
+                        <div class="border-bottom">
+                            <h3 class="pb-3 mb-0" style="border-bottom:2px solid black; width:fit-content">Recent Volunteers</h3>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center my-3">
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer1.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Andrew J</p>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer2.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Charles Vigue</p>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer3.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Kathryn R</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center my-3">
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer4.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Estella Fowles</p>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer5.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Rose Lewis</p>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer6.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Raymond P</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center my-3">
+                            <div class="col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer7.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Travis Steen</p>
+                            </div>
+
+                            <div class="col-lg-4 col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer8.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Sarah Santillan</p>
+                            </div>
+
+                            <div class="col-lg-4 col-4">
+                                <div class="d-flex justify-content-center">
+                                    <img src="~/CI Platform Assets/volunteer9.png" class="rounded-circle" height="70" width="70" />
+                                </div>
+                                <p class="d-flex justify-content-center" style="font-size: 13px">Linda Richards</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Bottom of Recent volunteer-->
+                    <div class="pagging d-flex justify-content-between align-items-center border-1 border-top-0">
+                        <button>
+                            <div class="pg-prev">
+                                <img src="~/CI Platform Assets/left.png">
+                            </div>
+                        </button>
+                        <div>
+                            <span>1 - 9 of 25 Recent Volunteers</span>
+                        </div>
+                        <button>
+                            <div class="pg-next">
+                                <img src="~/CI Platform Assets/right-arrow1.png">
+                            </div>
+                        </button>
+                    </div>
+                </div>
         </div>
     </div>
-    <div class="container-fluid">
+    @*Related Mission*@
     <div class="row">
-        <div class="container text-center my-5">
-            <h2>Related Mission</h2>
-        </div>
-        <div class="container">
-            <div class="row ">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div style="position: relative;">
-                            <img class="card-img-top" id="mission-img"
-                                src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                alt="Card image cap">
-                            <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
-                                id="location" style="width: 7rem">
-                                <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
-                                <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
-                            </div>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
-                                <img src="/CI Platform Assets/heart.png" alt="">
-                            </button>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
-                                <img src="/CI Platform Assets/user.png" alt="">
-                            </button>
-                            <div>
-                                <p class="d-inline px-2" id="missionTheme">Environment</p>
-                            </div>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
-                            <h5 class="card-title px-3">environment sustainability</h5>
-                            <p class="card-text px-3">
-                                Some quick example text to build on the card title and make up the
-                                bulk
-                                of the
-                                card's content.
-                            </p>
-                            <div class="d-flex justify-content-between px-3">
-                                <div>
-                                    <p>Tree Canada</p>
-                                </div>
-                                <div>
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                </div>
-                            </div>
-                            <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
-                                <div class="border text-center" id="missionPeriod">
-                                    <small>From 10/01/2019 until 25/02/2019</small>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="20" src="/CI Platform Assets/Seats-left.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#"
-                                    class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
-                                    id="applyNowBtn">
-                                    <p class="mb-0 pe-4 text-warning h6">Apply</p>
-                                    <img src="/CI Platform Assets/right-arrow.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="container text-center my-5">
+                    <h2>Related Mission</h2>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card">
-                        <div style="position: relative;">
-                            <img class="card-img-top" id="mission-img"
-                                src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                alt="Card image cap">
-                            <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
-                                id="location" style="width: 7rem">
-                                <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
-                                <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
-                            </div>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
-                                <img src="/CI Platform Assets/heart.png" alt="">
-                            </button>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
-                                <img src="/CI Platform Assets/user.png" alt="">
-                            </button>
-                            <div>
-                                <p class="d-inline px-2" id="missionTheme">Environment</p>
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div style="position: relative;">
+                                    <img class="card-img-top" id="mission-img"
+                                        src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                                        alt="Card image caption">
+                                    <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
+                                        id="location" style="width: 7rem">
+                                        <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
+                                        <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
+                                    </div>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
+                                        <img src="/CI Platform Assets/heart.png" alt="">
+                                    </button>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
+                                        <img src="/CI Platform Assets/user.png" alt="">
+                                    </button>
+                                    <div>
+                                        <p class="d-inline px-2" id="missionTheme">Environment</p>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
+                                    <h5 class="card-title px-3">environment sustainability</h5>
+                                    <p class="card-text px-3">
+                                        Some quick example text to build on the card title and make up the
+                                        bulk
+                                        of the
+                                        card's content.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <div>
+                                            <p>Tree Canada</p>
+                                        </div>
+                                        <div>
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
+                                        <div class="border text-center" id="missionPeriod">
+                                            <small>From 10/01/2019 until 25/02/2019</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center px-4 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="20" src="/CI Platform Assets/Seats-left.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
+                                            id="applyNowBtn">
+                                            <p class="mb-0 pe-4 text-warning h6">Apply</p>
+                                            <img src="/CI Platform Assets/right-arrow.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
-                            <h5 class="card-title px-3">environment sustainability</h5>
-                            <p class="card-text px-3">
-                                Some quick example text to build on the card title and make up the
-                                bulk
-                                of the
-                                card's content.
-                            </p>
-                            <div class="d-flex justify-content-between px-3">
-                                <div>
-                                    <p>Tree Canada</p>
-                                </div>
-                                <div>
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                </div>
-                            </div>
-                            <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
-                                <div class="border text-center" id="missionPeriod">
-                                    <small>From 10/01/2019 until 25/02/2019</small>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="20" src="/CI Platform Assets/Seats-left.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <a href="#"
-                                    class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
-                                    id="applyNowBtn">
-                                    <p class="mb-0 pe-4 text-warning h6">Apply</p>
-                                    <img src="/CI Platform Assets/right-arrow.png" alt="">
-                                </a>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div style="position: relative;">
+                                    <img class="card-img-top" id="mission-img"
+                                        src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                                        alt="Card image cap">
+                                    <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
+                                        id="location" style="width: 7rem">
+                                        <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
+                                        <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
+                                    </div>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
+                                        <img src="/CI Platform Assets/heart.png" alt="">
+                                    </button>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
+                                        <img src="/CI Platform Assets/user.png" alt="">
+                                    </button>
+                                    <div>
+                                        <p class="d-inline px-2" id="missionTheme">Environment</p>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
+                                    <h5 class="card-title px-3">environment sustainability</h5>
+                                    <p class="card-text px-3">
+                                        Some quick example text to build on the card title and make up the
+                                        bulk
+                                        of the
+                                        card's content.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <div>
+                                            <p>Tree Canada</p>
+                                        </div>
+                                        <div>
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
+                                        <div class="border text-center" id="missionPeriod">
+                                            <small>From 10/01/2019 until 25/02/2019</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center px-4 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="20" src="/CI Platform Assets/Seats-left.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
+                                            id="applyNowBtn">
+                                            <p class="mb-0 pe-4 text-warning h6">Apply</p>
+                                            <img src="/CI Platform Assets/right-arrow.png" alt="">
+                                        </a>
+                                    </div>
 
-                <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                    <div class="card ">
-                        <div style="position: relative;">
-                            <img class="card-img-top" id="mission-img"
-                                src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
-                                alt="Card image cap">
-                            <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
-                                id="location" style="width: 7rem">
-                                <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
-                                <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
-                            </div>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
-                                <img src="/CI Platform Assets/heart.png" alt="">
-                            </button>
-                            <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
-                                <img src="/CI Platform Assets/user.png" alt="">
-                            </button>
-                            <div>
-                                <p class="d-inline px-2" id="missionTheme">Environment</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-0">
-                            <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
-                            <h5 class="card-title px-3">environment sustainability</h5>
-                            <p class="card-text px-3">
-                                Some quick example text to build on the card title and make up the
-                                bulk
-                                of the
-                                card's content.
-                            </p>
-                            <div class="d-flex justify-content-between px-3">
-                                <div>
-                                    <p>Tree Canada</p>
-                                </div>
-                                <div>
-                                    <img class="rating-star" src="./CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                    <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
-                                </div>
-                            </div>
-                            <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
-                                <div class="border text-center" id="missionPeriod">
-                                    <small>From 10/01/2019 until 25/02/2019</small>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center px-4 py-3">
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="20" src="./CI Platform Assets/Seats-left.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+                            <div class="card ">
+                                <div style="position: relative;">
+                                    <img class="card-img-top" id="mission-img"
+                                        src="/CI Platform Assets/Grow-Trees-On-the-path-to-environment-sustainability-1.png"
+                                        alt="Card image cap">
+                                    <div class="bg-dark bg-opacity-50 d-flex justify-items-center align-items-center py-2 pe-auto"
+                                        id="location" style="width: 7rem">
+                                        <img class="ms-auto pe-2" src="/CI Platform Assets/pin.png" alt="" height="20">
+                                        <small class="text-light me-auto mb-0" id="locationName">Toronto</small>
                                     </div>
-                                    <div class="d-flex align-items-center">
-                                        <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
-                                        <div>
-                                            <p class="mb-0">10</p>
-                                            <small>Seats Left</small>
-                                        </div>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="likeThisMission">
+                                        <img src="/CI Platform Assets/heart.png" alt="">
+                                    </button>
+                                    <button class="bg-dark bg-opacity-50 border-0 card-btn" id="shareToFriend">
+                                        <img src="/CI Platform Assets/user.png" alt="">
+                                    </button>
+                                    <div>
+                                        <p class="d-inline px-2" id="missionTheme">Environment</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div>
-                                <a href="#"
-                                    class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
-                                    id="applyNowBtn">
-                                    <p class="mb-0 pe-4 text-warning h6">Apply</p>
-                                    <img src="/CI Platform Assets/right-arrow.png" alt="">
-                                </a>
+                                <div class="card-body p-0">
+                                    <h5 class="card-title mt-3 px-3">Grow Trees - On the path to</h5>
+                                    <h5 class="card-title px-3">environment sustainability</h5>
+                                    <p class="card-text px-3">
+                                        Some quick example text to build on the card title and make up the
+                                        bulk
+                                        of the
+                                        card's content.
+                                    </p>
+                                    <div class="d-flex justify-content-between px-3">
+                                        <div>
+                                            <p>Tree Canada</p>
+                                        </div>
+                                        <div>
+                                            <img class="rating-star" src="./CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/selected-star.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                            <img class="rating-star" src="/CI Platform Assets/star-empty.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="border-top border-bottom mt-3" id="missionInfo" style="position: relative;">
+                                        <div class="border text-center" id="missionPeriod">
+                                            <small>From 10/01/2019 until 25/02/2019</small>
+                                        </div>
+                                        <div class="d-flex justify-content-between align-items-center px-4 py-3">
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="20" src="./CI Platform Assets/Seats-left.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="me-2" height="25" src="/CI Platform Assets/deadline.png" alt="">
+                                                <div>
+                                                    <p class="mb-0">10</p>
+                                                    <small>Seats Left</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <a href="#"
+                                            class="btn border-warning d-flex align-items-center justify-content-center mx-auto my-2"
+                                            id="applyNowBtn">
+                                            <p class="mb-0 pe-4 text-warning h6">Apply</p>
+                                            <img src="/CI Platform Assets/right-arrow.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </div>
-</div>
-</div>
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" asp-append-version="true"></script>
