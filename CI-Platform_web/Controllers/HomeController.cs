@@ -26,6 +26,11 @@ namespace CI_Platform_web.Controllers
         {
             return View();
         }
+
+        public IActionResult Storylistingpage()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
